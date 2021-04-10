@@ -1,0 +1,35 @@
+.required{
+    color: red;
+}
+
+fieldset *{
+    margin: 5px;
+}
+
+.long-input{
+    width: 75%;
+}
+
+#notes{
+    max-width: 78%;
+    min-height: 75px;
+    height: 75px;
+}
+
+#licenseSelect{
+    width: 78%;
+}
+
+#licenceLink{
+    cursor: pointer;
+}
+
+#submitButton{
+    margin-bottom: 20px;
+}
+
+#errorLat, #errorLong{
+    margin: 0;
+    color: red;
+    display: none;
+}

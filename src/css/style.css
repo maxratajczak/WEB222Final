@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 650;
+}
+
+p {
+  font-weight: 500;
+}
+
+/* Header */
+#hero {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#hero > img {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+.quote {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Wildlife Observations Map */
+#map-container {
+  height: 450px;
+  width: 100%;
+}
+
+.marker-text {
+  text-align: center;
+}
+
+/* Wildlife Observations Table */
+.buttons {
+  text-align: center;
+  margin: 2em;
+}
+.buttons > button:hover {
+  background-color: lightblue;
+}
+.buttons > button:focus {
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+td {
+  vertical-align: middle;
+}
+
+time {
+  background: inherit;
+}
+
+/*Back To Top Link*/
+#back-to-top {
+  float: right;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-family: inherit;
+  color: var(--form-text);
+  background-color: var(--background);
+  text-decoration: none;
+  transition: var(--animation-duration);
+  text-align: center;
+}
+
+#back-to-top:hover {
+  background-color: lightblue;
+}
+
+#foot-text {
+  float: left;
+}
+
+/* MY CODE FROM HERE DOWN */
+:root {
+  --corner-radius: 15px;
+}
+
+#observation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#legend {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  height: 515px;
+  width: 375px;
+  margin-bottom: 25px;
+  border-radius: var(--corner-radius);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.0125);
+}
+
+.card-body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 0;
+  margin: 0px 15px;
+}
+
+.card-body a {
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-body h3 {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.card-body h4 {
+  margin-top: 10px;
+}
+
+.card-img {
+  height: 375px;
+  width: 375px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: var(--corner-radius);
+  border-top-left-radius: var(--corner-radius);
+}
+
+.card-icons {
+  padding: 0 15px;
+  text-align: right;
+}
+
+.card-icons i {
+  margin: 5px;
+  font-size: 1.1em;
+}
+
+#search{
+  display: flex;
+}
+
+#search-form{
+  flex: 1;
+}
+
+#search-btn{
+  padding: 0px 40px;
+}
+
+#search-btn i{
+  padding-right: 5px;
+}
