@@ -21,16 +21,13 @@ function validate(event) {
   //Validating the lat and long
   if(isNaN(lat) || (lat < -90 || lat > 90)){
     showError(latError);
-    console.log(lat, typeof lat);
     return false;
   }
   else if(isNaN(long) || (long < -180 || long > 180)){
     showError(longError);
-    console.log(long, typeof long);
     return false;
 
   }
-  return false;
 }
 
 function showError(element){
