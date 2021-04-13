@@ -101,8 +101,10 @@
         <h2>Map</h2>
         <!-- Search Form -->
         <form id="search">
-          <input id="search-form" type="search" placeholder="1750 Finch Ave E, North York, ON, CA">
-          <button id="search-btn" type="submit"><i id="search-icon" class="fas fa-search"></i>Search</button>
+          <label for="addressSearch" class="sr-only">Search Bar</label>
+          <input id="search-form" name="addressSearch" type="search" placeholder="1750 Finch Ave E, North York, ON, CA">
+          <label for="searchBtn" class="sr-only">Search Button</label>
+          <button id="search-btn" name="searchBtn" type="submit"><i id="search-icon" class="fas fa-search"></i>Search</button>
         </form>
         <!-- Leaflet Map will get drawn within this div element -->
         <div id="map" class="loading">
