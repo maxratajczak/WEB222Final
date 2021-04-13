@@ -7,8 +7,8 @@ function validate(event) {
   // submitted.
 
   //Getting the values of the lat and long input
-  var lat = parseInt(document.querySelector("#lat").value);
-  var long = parseInt(document.querySelector("#long").value);
+  var lat =  document.querySelector("#lat").value;
+  var long = document.querySelector("#long").value;
 
   //Selecting the error messages in the html
   var latError = document.getElementById("errorLat");
@@ -17,15 +17,20 @@ function validate(event) {
   //Resetting the error messages so it can recheck values & show error to proper invalid value
   resetErrors(latError, longError);
 
+
   //Validating the lat and long
   if(isNaN(lat) || (lat < -90 || lat > 90)){
     showError(latError);
+    console.log(lat, typeof lat);
     return false;
   }
   else if(isNaN(long) || (long < -180 || long > 180)){
-    longError.style.display = "inline-block";
+    showError(longError);
+    console.log(long, typeof long);
     return false;
+
   }
+  return false;
 }
 
 function showError(element){
