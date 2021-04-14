@@ -1,5 +1,5 @@
 {
-  "name": "wildlife-web-walk",
+  "name": "wildlife-web-walk v3.0",
   "version": "1.0.0",
   "scripts": {
     "copy-src": "copyfiles package.json src/**/* src/* submission",
