@@ -117,9 +117,14 @@
         <!-- This span needs to be populated at runtime with JavaScript -->
         <h2 id="observation-title">Wildlife Observations: <span></span></h2>
         <div class="buttons">
-          <button id="show-all">All Species</button>
-          <button id="show-native">Only Native Species</button>
-          <button id="show-introduced">Only Introduced Species</button>
+          <label for="showallbtn" class="sr-only">Show All Species</label>
+          <button id="show-all" name="showallbtn">All Species</button>
+
+          <label for="shownativebtn" class="sr-only">Show Native Species</label>
+          <button id="show-native" name="shownativebtn">Only Native Species</button>
+
+          <label for="showintroducedbtn" class="sr-only">Show Introduced Species</label>
+          <button id="show-introduced" name="showintroducedbtn">Only Introduced Species</button>
         </div>
         <div id="legend">
           <span><i class="fas fa-leaf" title="Native"></i> Native</span>

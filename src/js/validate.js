@@ -30,10 +30,12 @@ function validate(event) {
   }
 }
 
+//Displaying the input error
 function showError(element){
   element.style.display = "inline-block";
 }
 
+//Removing both input errors
 function resetErrors(error1, error2){
   error1.style.display = "none";
   error2.style.display = "none";
