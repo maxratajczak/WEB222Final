@@ -119,13 +119,16 @@ function toggleLoading(isLoading) {
   // times (i.e., we need to wait until the loading finishes).  We decide what to
   // do based on the value of the isLoading argument.
   var searchBtn = document.querySelector("#search-btn");
+  var searchBtnText = document.querySelector("#search-btn-text");
   var searchIcon = document.querySelector("#search-icon");
 
   if (isLoading) {
     searchBtn.setAttribute("disabled", "");
+    searchBtnText.innerHTML = "Loading...";
     searchIcon.setAttribute("class", "fas fa-hourglass-half");
   } else if (!isLoading) {
     searchBtn.removeAttribute("disabled", "");
+    searchBtnText.innerHTML = "Search";
     searchIcon.setAttribute("class", "fas fa-search");
   }
 }
